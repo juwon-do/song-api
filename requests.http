@@ -1,0 +1,30 @@
+### Song index
+GET http://localhost:3000/songs.json
+
+### Song create
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "American Idiot",
+  "album": "2nd",
+  "artist": "kanye",
+  "year": "2000"
+}
+
+###Song show
+GET http://localhost:3000/songs/4.json
+
+###Song update
+PATCH http://localhost:3000/songs/3.json
+Content-Type: application/json
+
+{
+  "title": "This love",
+  "album": "2nd",
+  "artist": "maroon",
+  "year": "2004"
+}
+
+###Song destroy
+DELETE http://localhost:3000/songs/4.json
