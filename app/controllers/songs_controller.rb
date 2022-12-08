@@ -26,9 +26,10 @@ class SongsController < ApplicationController
     song.save
     render json: song.as_json
   end
-  def destory
+
+  def destroy
     song = Song.find_by(id: params[:id])
-    song.destory
+    song.destroy
   end
 
 end
